@@ -1,0 +1,11 @@
+
+
+#include "SDL.h"
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#ifdef __cplusplus
+#include "global.h"
+#endif

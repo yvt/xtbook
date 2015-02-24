@@ -1,0 +1,22 @@
+//
+//  XTBSeparatorMenuItem.h
+//  XTBook
+//
+//  Created by Kawada Tomoaki on 5/20/11.
+//  Copyright 2011 Nexhawks. All rights reserved.
+//
+
+#pragma once
+
+#include "XTBMenuItem.h"
+
+class XTBSeparatorMenuItem: public XTBMenuItem{
+public:
+	XTBSeparatorMenuItem();
+	
+	virtual int getHeight() const;
+	virtual int getMinWidth() const;
+	
+	virtual void render(twDC *, const twRect&, bool selected);
+};
+

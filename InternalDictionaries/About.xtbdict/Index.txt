@@ -1,0 +1,15 @@
+<img src="about:XTBookTitle" />
+<p style="text-align: center; color: #666;">Copyright 2011 <a id="nexhawksInfo" href="xtbook:footnote#nexhawksInfo"><div style="display: none;">
+<dl>
+<dt><strong>Contacting Nexhawks.net</strong></dt>
+<dd></dd>
+<dd><strong>Web: </strong>http://www.nexhawks.net/</dd>
+<dd><strong>Mail: </strong>nh@nexhawks.net</dd>
+<dd><strong>Twitter: </strong>nexhawks</dd>
+</dl></div>Nexhawks.net</a>, All rights reserved.</p>
+
+<ul>
+<li><a href="about:GPL">About License</a></li>
+<li><a href="about:Libraries">About Libraries</a></li>
+<li><a href="xtbook:version">About Version</a></li>
+</ul>

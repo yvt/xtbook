@@ -1,0 +1,142 @@
+com.nexhawks.XTBook.langs.en
+English
+
+Type="com.nexhawks.XTBook.langs"
+
+# Common
+
+XTBError="Error"
+XTBLoading="Loading..."
+XTBLoadingSomething="Loading {0}..."
+XTBDateTomorrow="Tomorrow"
+XTBDateYesterday="Yesterday"
+XTBDateToday="Today"
+XTBVersionInformation="Version"
+
+# Initialization
+
+XTBLoadLocale="Loading Locale..."
+XTBInitPreference="Initalizing Preference..."
+XTBInitSkin="Initializing Skin..."
+XTBInitFont="Initializing Font..."
+XTBInitDictionaryType="Initializing System..."
+XTBInitDictionary="Loading Dictionaries..."
+XTBInitStartupItems="Loading Startup Items..."
+XTBSavePreference="Saving Preference..."
+
+XTBInitSkinFailed="Failed to setup the skin."
+XTBInitFontFailed="Failed to setup the font."
+XTBInitPreferenceFailed="Failed to load the preference."
+XTBInitDictionaryTypeFailed="Failed to register one of the core dictionary types."
+XTBInitDictionaryFailed="Failed to load dictionaries."
+XTBStartupItemsFailed="Failed to load one of startup items."
+
+# XTBPreference
+
+XTBPreferenceLocale="Locale:"
+XTBPreferenceNoteNeedsRestart="Some preferences requires restart to enable."
+XTBPreferenceSingleTouchLink="Tap to open a link"
+XTBPreferenceFullScreen="Full Screen"
+XTBPreferenceSinglePage="Single page mode"
+XTBPreferenceIgnoreTemplates="Ignore all templates"
+
+# XTBDictionary
+
+XTBDictionaryLoadingCoreDictionary="Loading Core Dictionary..."
+
+# XTBBrowser
+
+XTBBrowserLinkOpen="Open"
+XTBBrowserLinkOpenInNewTab="Open in New Tab"
+XTBBrowserLinkNoArticle="Article Not Found"
+XTBBrowserLinkSearch="Search"
+XTBBrowserLinkSearchInNewTab="Search in New Tab"
+XTBBrowserLinkJump="Jump"
+XTBBrowserLinkJumpPage="Jump to Page {0}"
+XTBBrowserLoadingArticle="Loading Article..."
+XTBBrowserParsing="Processing HTML..."
+XTBBrowserFailedToLoad="Failed to load the URL."
+XTBBrowserCannotGoBack="Cannot go back."
+XTBBrowserCannotGoForward="Cannot go forward."
+XTBBrowserTitleHome="Start Page"
+XTBBrowserTitleSearch="Search '{0}'"
+XTBBrowserPageNotReturned="The dictionary engine didn't return the contents."
+XTBBrowserUrlNotFound="The page for the URL '{0}' not found."
+XTBBrowserIndexPage="Page {0}"
+XTBBrowserPageBar="{0}/{1}"
+XTBBrowserInvalidSystemCall="Invalid system call."
+
+# XTBMainWindow
+
+XTBMainWindowMenuNewTab="New Tab"
+XTBMainWindowMenuDuplicateTab="Duplicate Tab"
+XTBMainWindowMenuPreferences="Preferences..."
+XTBMainWindowMenuQuit="Quit XTBook"
+XTBMainWindowMenuGoBack="Back"
+XTBMainWindowMenuGoForward="Forward"
+XTBMainWindowMenuGoNextPage="Next Page"
+XTBMainWindowMenuGoPreviousPage="Previous Page"
+XTBMainWindowMenuCloseTab="Close Tab"
+
+# XTBSearchView
+
+XTBSearchViewError="Error occured while search."
+XTBSearchViewNoResult="No Results"
+XTBSearchViewJapaneseResult="{0} 【{1}】"
+
+# XTBStartPageView
+
+XTBStartPageViewBookmarks="Bookmarks"
+XTBStartPageViewHistories="History"
+XTBStartPageAbout="About XTBook..."
+XTBStartPageListOpen="Open"
+XTBStartPageListRemove="Remove"
+XTBStartPageListClear="Clear All..."
+XTBStartPageListClearConfirm="Are you sure to clear history? This cannot be undone."
+
+# TWViewer
+
+TWViewerBuildingRenderTree="Building Render Tree..."
+TWViewerComputingStyles="Applying CSS..."
+TWViewerLayouting="Layouting..."
+TWViewerComputingCoordinates="Computing Coordinates.."
+TWViewerIndexingDOM="Indexing DOM..."
+
+# XTBWikiplexusArticle
+
+XTBWikiplexusArticleReading="Reading Article..."
+XTBWikiplexusArticleConverting="Converting..."
+XTBWikiplexusArticleReadingPage="Template:{0}"
+XTBWikiplexusArticleReadingImage="Image:{0}"
+XTBWikiplexusList="List"
+XTBWikiplexusShow="[Show]"
+
+# Exceptions
+
+XTBExceptionDescription="Exception '{0}' was thrown. at {1} in {2}:{3} : {4}"
+XTBKeyNotFoundException="Key '{0}' not found."
+XTBFileNotFoundException="File '{0}' not found."
+XTBPageNotFoundException="Page '{0}' not found."
+XTBWin32Exception="Win32 System error {0}.: {1}"
+XTBNotImplementedException="Not implemented."
+XTBIOErrorException="I/O error."
+XTBFileIOErrorException="I/O error while manupulating path '{0}'."
+XTBArgumentNullException="Argument '{0}' is null."
+XTBArgumentOutOfRangeException="Argument '{0}' out of range."
+XTBInvalidCallException="Invalid call."
+XTBInvalidFormatException="Invalid format."
+XTBStreamNotSupportedException="Stream not supported."
+XTBInvalidStreamStateException="Invalid stream state."
+XTBRaxCorruptedException="Rax file is corrupted."
+
+XTBFontNotSDLDCException="XTBFont supports only twSDLDC."
+XTBFontNot16BitColorDepthException="XTBFont supports only 16-bit color depth."
+
+XTBDictionarySchemeKeyNotFoundException="Info.plist of a dictionary must contain a entry with key '{0}'."
+XTBDictionarySchemeNotFoundException="Scheme '{0}' doesn't exist."
+XTBDictionaryTypeAlreadyExistException="Dictionary type '{0}' already exists."
+XTBDictionaryTypeNotFoundException="Dictionary type '{0}' not found."
+XTBWikiplexusInvalidMagicException="Invalid magic number '{0}' was found. ('{1}' was expected)"
+XTBUnknownException="Unknown exception."
+XTBRichgelJpegException="Error '{0}' in jpgdlib while decoding jpeg image."
+

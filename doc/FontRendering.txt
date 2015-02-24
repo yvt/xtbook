@@ -1,0 +1,10 @@
+
+    DOCUMENT ABOUT FONT RENDERING
+	
+ PERFORMANCE
+
+for XTBHGGothicAA, font rendering is 11 times slower than blitting.
+font rendering: 4631 clocks/glyph, blit: 395 clocks/glyph (A)
+                6074 clocks/glyph, blit: 344 clocks/glyph (あ)
+it means, in sharp brain, it renders 11854 glyphs/sec.
+also, for XTBHGGothic, font rendering is 10 times slower than blitting.

@@ -1,0 +1,144 @@
+com.nexhawks.XTBook.langs.ja
+日本語
+
+Type="com.nexhawks.XTBook.langs"
+
+# Common
+
+XTBError="エラー"
+XTBLoading="読み込み中です..."
+XTBLoadingSomething="{0} を読み込み中です..."
+XTBDateTomorrow="明日"
+XTBDateYesterday="昨日"
+XTBDateToday="今日"
+XTBVersionInformation="バージョン情報"
+
+# Initialization
+
+XTBLoadLocale="言語を読み込んでいます..."
+XTBInitPreference="設定を読み込んでいます..."
+XTBInitSkin="スキンを読み込んでいます..."
+XTBInitFont="フォントを読み込んでいます..."
+XTBInitDictionaryType="コアを初期化しています..."
+XTBInitDictionary="辞書を読み込んでいます..."
+XTBInitStartupItems="スタートアップ項目を読み込んでいます..."
+XTBSavePreference="設定を保存しています..."
+
+XTBInitSkinFailed="スキンの読み込み中にエラーが発生しました。"
+XTBInitFontFailed="フォントの読み込み中にエラーが発生しました。"
+XTBInitPreferenceFailed="設定の読み込み中にエラーが発生しました。"
+XTBInitDictionaryTypeFailed="辞書タイプの一つの登録中にエラーが発生しました。"
+XTBInitDictionaryFailed="辞書の読み込み中にエラーが発生しました。"
+XTBStartupItemsFailed="スタートアップ項目の読み込み中にエラーが発生しました。"
+
+# XTBPreference
+
+XTBPreferenceLocale="言語:"
+XTBPreferenceNoteNeedsRestart="一部の設定はXTBookを再起動するまで有効になりません。"
+XTBPreferenceSingleTouchLink="タップでリンクを開く"
+XTBPreferenceFullScreen="フルスクリーン"
+XTBPreferenceSinglePage="単一ページモード"
+XTBPreferenceIgnoreTemplates="すべてのテンプレートを無視する"
+
+# XTBDictionary
+
+XTBDictionaryLoadingCoreDictionary="コア辞書を読み込んでいます..."
+
+# XTBBrowser
+
+
+
+
+XTBBrowserLinkOpen="開く"
+XTBBrowserLinkOpenInNewTab="新規タブで開く"
+XTBBrowserLinkNoArticle="リンク先が見つかりません"
+XTBBrowserLinkSearch="検索"
+XTBBrowserLinkSearchInNewTab="新規タブで検索"
+XTBBrowserLinkJump="ジャンプ"
+XTBBrowserLinkJumpPage="ページ {0} にジャンプ"
+XTBBrowserLoadingArticle="記事を読み込んでいます..."
+XTBBrowserParsing="HTMLを処理しています..."
+XTBBrowserFailedToLoad="URLを読み込めませんでした。"
+XTBBrowserCannotGoBack="Cannot go back."
+XTBBrowserCannotGoForward="Cannot go forward."
+XTBBrowserTitleHome="スタートページ"
+XTBBrowserTitleSearch="'{0}' の検索"
+XTBBrowserPageNotReturned="辞書エンジンはページの内容を返しませんでした。"
+XTBBrowserUrlNotFound="URL '{0}' に対応するページは見つかりませんでした。"
+XTBBrowserIndexPage="ページ {0}"
+XTBBrowserPageBar="{0}/{1}"
+XTBBrowserInvalidSystemCall="不正なシステムコールです。"
+
+# XTBMainWindow
+
+XTBMainWindowMenuNewTab="新規タブ"
+XTBMainWindowMenuDuplicateTab="タブを複製"
+XTBMainWindowMenuPreferences="環境設定..."
+XTBMainWindowMenuQuit="XTBookを終了"
+XTBMainWindowMenuGoBack="戻る"
+XTBMainWindowMenuGoForward="進む"
+XTBMainWindowMenuGoNextPage="次のページ"
+XTBMainWindowMenuGoPreviousPage="前のページ"
+XTBMainWindowMenuCloseTab="タブを閉じる"
+
+# XTBSearchView
+
+XTBSearchViewError="検索中にエラーが発生しました。"
+XTBSearchViewNoResult="結果はありません"
+XTBSearchViewJapaneseResult="{0} 【{1}】"
+
+# XTBStartPageView
+
+XTBStartPageViewBookmarks="ブックマーク"
+XTBStartPageViewHistories="最近表示したページ"
+XTBStartPageAbout="XTBookについて..."
+XTBStartPageListOpen="開く"
+XTBStartPageListRemove="取り除く"
+XTBStartPageListClear="すべて削除..."
+XTBStartPageListClearConfirm="履歴をすべて削除しますか? この操作を元に戻すことはできません。"
+
+# TWViewer
+
+TWViewerBuildingRenderTree="ツリーを構築しています..."
+TWViewerComputingStyles="CSSを適用しています..."
+TWViewerLayouting="レイアウトしています..."
+TWViewerComputingCoordinates="座標を計算しています..."
+TWViewerIndexingDOM="インデックスを作成しています..."
+
+# XTBWikiplexusArticle
+
+XTBWikiplexusArticleReading="記事を読み込んでいます..."
+XTBWikiplexusArticleConverting="変換しています..."
+XTBWikiplexusArticleReadingPage="テンプレート:{0}"
+XTBWikiplexusArticleReadingImage="画像:{0}"
+XTBWikiplexusList="リスト"
+XTBWikiplexusShow="[表示]"
+
+# Exceptions
+
+XTBExceptionDescription="例外 '{0}' がファイル '{2}' の {3} 行目の場所 '{1}' でスローされました。:{4}"
+XTBKeyNotFoundException="キー '{0}' が見つかりませんでした。"
+XTBFileNotFoundException="ファイル '{0}' が見つかりませんでした。"
+XTBPageNotFoundException="ページ '{0}' が見つかりませんでした。"
+XTBWin32Exception="Win32 システムエラー {0} です。: {1}"
+XTBNotImplementedException="実装されていません。"
+XTBIOErrorException="I/O エラーです。"
+XTBFileIOErrorException="パス '{0}' を操作中に I/O エラーが発生しました。"
+XTBArgumentNullException="引数 '{0}' は null にできません。"
+XTBArgumentOutOfRangeException="引数 '{0}' は範囲を超えています。"
+XTBInvalidCallException="不正な関数呼び出しです。"
+XTBInvalidFormatException="不正な形式です。"
+XTBStreamNotSupportedException="ストリームはサポートされていません。"
+XTBInvalidStreamStateException="不正な状態のストリームに対し処理を実行しようとしました。"
+XTBRaxCorruptedException="Rax 形式のファイルが損傷しています。"
+
+XTBFontNotSDLDCException="XTBFont は twSDLDC のみをサポートします。"
+XTBFontNot16BitColorDepthException="XTBFont は 16 ビット色深度のみサポートをします。"
+
+XTBDictionarySchemeKeyNotFoundException="辞書の Info.plist はキー '{0}' を含んでいる必要があります。"
+XTBDictionarySchemeNotFoundException="スキーム '{0}' は存在しません。"
+XTBDictionaryTypeAlreadyExistException="辞書タイプ '{0}' はすでに存在します。"
+XTBDictionaryTypeNotFoundException="辞書タイプ '{0}' が見つかりませんでした。"
+XTBWikiplexusInvalidMagicException="不正なマジックナンバー '{0}' が見つかりました ('{1}' が予期されていたものです)。"
+XTBUnknownException="予期しない例外です。"
+XTBRichgelJpegException="エラー '{0}' が JPEG 画像のデコード中に jpgdlib で発生しました。"

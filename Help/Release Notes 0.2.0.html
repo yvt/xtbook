@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta http-equiv="Content-Encoding" content="UTF-8" />
+		<meta http-equiv="Accept-Encoding" content="UTF-8" />
+		
+		<title>XTBook</title>
+		
+		<style type="text/css">
+			body{
+				font-size: 12px;
+				background-color: white;
+				color: black;
+				-webkit-font-smoothing: antialiased;
+				font-family: sans-serif;
+				margin: 20px 40px;
+				line-height: 1.8em;
+			}
+			a{
+				color:#0645ad;
+				text-decoration: underline;
+			}
+			h2{
+				font-size: 18px;
+				color: #7f7f7f;
+				margin-left: 10px;
+				margin-top: 50px;
+				margin-bottom: 20px;
+			}
+			h3{
+				font-size: 14px;
+				
+			}
+			.e {
+				text-transform:uppercase;
+				font-size:95%;
+				vertical-align: -0.45ex;
+				margin-left: -0.1em;
+				margin-right: -0.06em;
+				line-height:0;
+			}
+			.t {
+				margin-left: -0.1em;
+			}
+			.b {
+				font-variant: small-caps;
+			}
+			.a {
+				text-transform:uppercase;
+				font-size:75%;
+				vertical-align: 0.45ex;
+				margin-left: -0.36em;
+				margin-right: -0.15em;
+			}
+			.ref_e {
+				text-transform:uppercase;
+				font-size:95%;
+				vertical-align: -0.45ex;
+				margin-left: -0.06em;
+				margin-right: -0.1em;
+				width:1ex;
+				filter:fliph;
+			}
+			.latex{
+				font-family: serif;
+			}
+			.wikitable{
+				border-collapse: collapse;
+				background-color: #f9f9f9;
+			}
+			.wikitable th{
+				background-color: #f0f0f0;
+			}
+			.wikitable td, .wikitable th{
+				border-color: #aaaaaa;
+				border-width: 1px;
+				border-style: solid;
+				padding: 5px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<p style="text-align: center;">
+			<img src="Images/XTBook Brain.jpg" alt="XTBook - MediaWiki Viewer for Sharp Brain" />
+		</p>
+		<h2>XTBookについて</h2>
+		<p>
+			XTBookは電子辞書Sharp Brainでウィキペディア及びアンサイクロペディアを可能な限り原版に忠実な形で表示するために開発されたプログラムです。
+			ウィキペディアのダンプを変換して生成されるXTBook Wikiplexus及び画像をデータベース化したImage Complex形式のデータベースに対応します。
+			また、XTBook Wikiplexusに内蔵された検索データベースを利用し、1,000,000件以上のキーから高速に検索をすることができます。
+		</p>
+		<table style="width: 100%;">
+			<tr>
+				<td style="text-align: center;"><img src="Images/Screen1.jpg" /></td>
+				<td style="text-align: center;"><img src="Images/Screen2.jpg" /></td>
+				<td style="text-align: center;"><img src="Images/Screen3.jpg" /></td>
+			</tr>
+		</table>
+		<h2>CeTBookとの違い</h2>
+		<div style="text-align: center"><img src="Images/Comparsion.jpg" alt="" /></div>
+		<ul>
+			<li>CeTBookはMediaWiki文法を独自形式のマークアップに変換していましたが、XTBookではMediaWiki文法の大部分を保持し、表示時にそれをHTMLに変換し、そのHTMLをブラウザエンジンで表示します。
+				<ul>
+					<li>MediaWiki RandomSelection拡張にも対応するため、表示するたびに内容の変化するテンプレートを表示することができます。</li>
+				</ul>
+				
+			</li>
+			<li>データベースの形式が異なります。</li>
+			<li>データベースの変換CPU時間が500分の1で済みます。</li>
+			<li>データベースの圧縮に、より高速なRax(Random Accessible Xz)形式を使用しています。</li>
+			<li>ただしページの読み込みには10から50倍の時間がかかります。</li>
+			<li>より多くのメモリを消費します(10から20倍)。</li>
+			<li>処理能力の関係上、複数のページに分割されることがあります。</li>
+			<li>より滑らかにスクロールすることができます。</li>
+			<li>ごく一部のHTML及びスタイルを解釈できます。
+				<ul>
+					<li>アンサイクロペディアの<span style="font-size:0.8em;padding:0.1em;border:thin solid rgb(150,50,25);background-color:rgb(255,225,225);color:rgb(125,50,0);">禁則事項です</span>等を表示することができます。</li>
+					<li>アンサイクロペディアの<a href="http://ja.uncyclopedia.info/wiki/Game%3Aゾーク">ゾーク</a>をプレイすることができます。</li>
+					<li>一部のテンプレートの構造が保たれます。</li>
+					<li>一部の情報ボックスを右寄せにすることができます。</li>
+					<li>スタイル付けされた表の一部を表示することができます。</li>
+					<li>セルが結合された複雑な表を表示することができます。</li>
+					<li>なお、外部CSSには対応しません。</li>
+				</ul>
+			</li>
+			<li>タブを並び替え・閉じることができます。</li>
+			<li>リンクを新しいタブで開くことができます。</li>
+			<li>リンクをシングルタップで開くことができます。</li>
+			<li>履歴が保存されます。</li>
+			<li>ブックマークを保存することができます。</li>
+			<li>アンチエイリアスフォントを使用します。</li>
+			<li>画像を表示することができます。</li>
+			<li>Unicodeの装飾記号の一部に対応します。</li>
+			<li>設定はMac OS X プロパティリスト方式で保存されます。</li>
+			<li>テキストを選択して検索することができます。</li>
+			<li>1ペイン方式です。</li>
+			<li>GPLライセンスです。</li>
+		</ul>
+	
+		<h2>ディレクトリ構成</h2>
+		<p>
+			<img src="Images/Folder.jpg" style="float: right;" alt="" />
+			Mac OS X版では、多くのファイルはXTBook.app/Contents/Resourcesに含まれています。
+		</p>
+		<dl>
+			<dt>XTBook.exe (Windows/Sharp Brain版), XTBook(.app) (Mac OS X版)</dt>
+			<dd>XTBookの本体です。</dd>
+			<dt>SDL.dll (Windows/Sharp Brain版)</dt>
+			<dd>ライブラリSimple DirectMedia Layerのファイルです。</dd>
+			<dt>mingwm10.dll (Sharp Brain版)</dt>
+			<dd>XTBookで必要な、mingw32ceのランタイムライブラリです。</dd>
+			<dt>Dictionaries/</dt>
+			<dd>ウィキペディア等の辞書を保存するフォルダです。</dd>
+			<dt>StartupItems/</dt>
+			<dd>起動時に読み込まれる項目を保存するフォルダです。</dd>
+			<dt>InternalDictionaries/</dt>
+			<dd>システム内部で使用する辞書を保存するフォルダです。この内容を変更することは推奨されません。</dd>
+			<dt>Languages/</dt>
+			<dd>XTBookの言語ファイルを含むフォルダです。</dd>
+		</dl>
+		<h2>インストール</h2>
+		<h3>Sharp Brain版 (アプリメニューから起動する)</h3>
+		<ol>
+			<li><strong>XTBook.exe</strong>のファイル名を<strong>AppMain.exe</strong>に変更します。</li>
+			<li>SDまたはmicroSDカードにフォルダ <strong>アプリ</strong>があることを確認します。そのフォルダが無い場合は作成します。</li>
+			<li>フォルダ<strong>XTBook-x.x.x-Brain</strong>をフォルダ<strong>アプリ</strong>の中にコピーします。</li>
+		</ol>
+		<h3>Sharp Brain版 (CeOpener等、他のランチャーから起動する)</h3>
+		<ol>
+			<li>SDまたはmicroSDカードの任意の場所にフォルダ<strong>XTBook-x.x.x-Brain</strong>をコピーします。</li>
+			<li>フルスクリーンモードにしたい場合は、<strong>XTBook.exe</strong>のファイル名を<strong>AppMain.exe</strong>に変更します。</li>
+		</ol>
+		<h3>Mac OS X版</h3>
+		<ul>
+			<li>XTBook(.app)をアプリケーションフォルダにコピーします。</li>
+		</ul>
+		<h2>辞書のインストール</h2>
+		<p>
+			XTBookは、拡張子.xtbdictの辞書データをサポートします。なお、同じ拡張でも内部形式が異なる場合もあります。
+		</p>
+		<p>
+			.xtbdictの辞書データをインストールするには、フォルダ<strong>Dictionaries</strong>に.xtbdictのフォルダ(バンドル)ごとコピーしてください。
+		</p>
+		
+		<h2>言語設定</h2>
+		<p>
+			<img src="Images/Preference Menu.jpg" alt="" style="float: right;" />
+			左下の矢印をタップ(クリック)してPreferences...から環境設定を表示し、言語を変更することができます。なお、言語設定はXTBookを再起動するまで適用されないことがあります。
+		</p>
+		
+		<h2 style="clear: right;">キーボード操作について</h2>
+		<p>
+			XTBookはタッチパネル操作に最適化されていますが、一部の機能はキーボードでも使用することができます。
+		</p>
+		<p style="text-align: center;">
+			<img src="Images/Brain Function Keys.jpg" alt="Brainでは一括検索キーから順にF1, F2, F3, そしてF4となります" />
+		</p>
+		<table class="wikitable" align="center">
+			<tr>
+				<th>F1</th>
+				<td>入力言語を切り替えます。</td>
+			</tr>
+			<tr>
+				<th>F2</th>
+				<td>左から1番目のタブを表示します。</td>
+			</tr>
+			<tr>
+				<th>F3</th>
+				<td>左から2番目のタブを表示します。</td>
+			</tr>
+			<tr>
+				<th>F4</th>
+				<td>左から3番目のタブを表示します。</td>
+			</tr>
+			<tr>
+				<th>エスケープ/戻る</th>
+				<td>メインメニュー(左下の矢印)を表示します。</td>
+			</tr>
+			<tr>
+				<th rowspan="2">左右矢印キー</th>
+				<td>スタートページの「ブックマーク」「最近表示したページ」リストを選択します。</td>
+			</tr>
+			<tr>
+				<td>スタートページ以外では、アドレスバーのキャレット(点滅するバー)を移動します。</td>
+			</tr>	
+			<tr>
+				<th rowspan="2">上下矢印キー</th>
+				<td>記事表示中は、記事をスクロールします。</td>
+			</tr>
+			<tr>
+				<td>リスト選択中は、リスト項目の選択を移動します。</td>
+			</tr>
+			<tr>
+				<th>クリア</th>
+				<td>アドレスバーを消去し、スタートページに戻ります。</td>
+			</tr>
+			
+			
+			
+			
+		</table>
+		
+		<h2 style="clear: right;">リリースノート (0.2.0)</h2>
+		<p>このバージョンにおける既知のバグ・仕様の一覧です。</p>
+		
+		<h3>システム</h3>
+		<ul>
+			<li><strong>FIXED:</strong>フルスクリーンモードを環境設定から切り替えることができません。Sharp Brain版においてフルスクリーンモードを使用するにはファイル名をAppMain.exeに変更する必要があります。</li>
+			<li>起動時にエラーが発生した場合、メッセージボックスが表示されず停止する場合があります。</li>
+			<li><strong>FIXED:</strong>環境設定に「一部の設定は…」とありますが、設定は1つしかありません。</li>
+			<li>Sharp Brain版においてウィンドウモードの場合、ウィンドウ内をタップするまで動作しないことがあります。これはSDLの問題であると考えられます。</li>
+			<li>Mac OS X版において、白が完全な白になりません。これはSDLの問題であると考えられます。</li>
+			<li>非アンチエイリアスフォントを削除しました。これにより実行可能ファイルが約500KB軽量化されます。</li>
+			<li>>スタートアップ項目に対応しました。フォルダ<strong>StartupItems</strong>に適切な実行可能ファイルを配置することにより、SDHCの有効化などを行うことが出来ます。</li>
+			<li>スクロールビューに操作不可能なスクロールバーを追加しました。</li>
+			<li>フォントレイアウトを更新しました。</li>
+			<li>進捗状況オーバーレイのCPU使用率を最適化しました。</li>
+			<li>進捗状況オーバーレイの動作を0.1秒高速化しました。</li>
+			<li>フルスクリーン表示を環境設定から切り替えることができます。</li>
+			<li>Brain版において、2GB以上のファイルを扱うコードを追加しました。</li>
+			<li>Brain版において、ファイルを読み書きするコードを変更しました。</li>
+		</ul>
+		
+		<h3>TWiki Parser (MediaWiki互換レイヤ)</h3>
+		<ul>
+			<li>複雑なMediaWiki構文の解釈に失敗することがあります。</li>
+			<li>SUBST:、MSG:、MSGNW:及びSAFESUBST:を無視します。</li>
+			<li>style、class属性以外のCSS指定を破棄します。</li>
+			<li>---- (区切り線)を処理しません。</li>
+			<li>言語間リンクを無視します。</li>
+			<li>カテゴリを無視します。</li>
+			<li>ISBN番号等を処理しません。</li>
+			<li>&lt;pre&gt;要素等を正しく処理しない場合があります。</li>
+			<li><strong>FIXED:</strong>不正な箇条書きタグを生成することがあります。</li>
+			<li><strong>FIXED:</strong>RandomSelectionの乱数のシードは初期化されていないため、結果が予測可能な場合があります。</li>
+			<li>60%高速化しました。</li>
+		</ul>
+		
+		<h3>TWiki Renderer (WebKit互換レイヤ)</h3>
+		<ul>
+			<li>clear指定がある場合、強制的にbothとなる場合があります。</li>
+			<li><strong>FIXED:</strong>float要素の位置が不正となる場合があります。このためデザインが崩壊することになります。</li>
+			<li>スタイルの大部分に対応しません。</li>
+			<li>スタイルの色の名前はX Window Systemの色として解釈するため、一部不正に解釈されます。</li>
+			<li>スタイルの色名が不正な場合、XTBookがクラッシュすることがあります。</li>
+			<li><strong>FIXED:</strong>スタイルの色指定のアルファチャンネルを無視します。</li>
+			<li>箇条書きのスタイルに対応しません。</li>
+			<li>エレメントに挟まれた空白が無視されます。</li>
+			<li><strong>FIXED:</strong>空のli要素によりクラッシュすることがあります。</li>
+			<li>HTMLの規格違反をより安定に処理します。</li>
+			<li>テーブルのセルの最小幅はパディング及びボーダーを考慮しない可能性があります。</li>
+			<li>フォントサイズが一定でない場合にスタイルが不正になる問題を解決しました。</li>
+			<li>CSSの長さ単位としてcm、mm、in、ex、pc、及びptに対応します。</li>
+			<li>style属性によるfont-size指定に対応します。</li>
+			<li>font-sizeでlarge, smaller等が指定されたときフォントサイズが最小サイズとなる問題を解決しました。</li>
+			<li><strong>NEW:</strong>HTMLの規格違反をさらに安定に処理します。</li>
+		</ul>	
+		
+		<h3>TWRenderDCTcw (TWiki Renderの描画)</h3>
+		<ul>
+			<li>HTML要素のボーダーの角を正しく処理しません。</li>
+			<li>inset、outset、ridge、及びgrooveをsolidと見なします。</li>
+			<li>フォントサイズが可変になりました。</li>
+			<li>フォントカラーのアルファチャンネルを処理します。</li>
+		</ul>
+		
+		<h3>Tcx (<span class="latex">L<span class="a">a</span>T<span class="e">e</span>X</span>互換レイヤ)</h3>
+		<ul>
+			<li>このバージョンにはTcxは搭載されていないため、数式はソースコードが表示されます。</li>
+			<li><strong>NEW:</strong>数式のソースコードの表示が最適化されます。</li>
+		</ul>
+		
+		<h3>検索</h3>
+		<ul>
+			<li>このバージョンでは串刺し検索以外はできません。</li>
+			<li><strong>NEW:</strong>Sharp Brain版において、「機能」キーを押してからQWERTYUIOPのうちいずれかのキーを押すことにより、
+				数字を入力することができます。</li>
+			<li><strong>NEW:</strong>Sharp Brain版において、「機能」キーを押してから「ー(ハイフン」キーを押すことにより、空白を入力することができます。</li>
+		</ul>
+		
+		<h3>ブラウザ</h3>
+		<ul>
+			<li>ページ移動後、画面が更新されない場合があります。</li>
+			<li>QuickView(脚注ビューア)内のリンクが作動しません。</li>
+			<li>表示に時間がかかります。特にウィキペディアの場合極度に複雑なMediaWiki構文が使用されているため、20秒以上かかる場合もあります。</li>
+			<li>メモリ不足に陥ることがあります。</li>
+			<li><strong>FIXED:</strong>キーボード操作でページを変更できません。</li>
+			<li>シングルタップでリンクを開き、ホールドでメニューを開けるようになりました。この設定は環境設定から行えます。</li>
+			<li>タブを閉じる方法を、左にスライドする方法から、閉じるボタンをタップする方法に変更しました。</li>
+			<li>ナビゲーションをメインメニューに追加しました。</li>
+			<li>ページの選択に対応しました。選択したテキストで検索を行うことが出来ます。</li>
+			<li><strong>FIXED:</strong>正しくページを選択できない場合があります。</li>
+			<li>ホールド操作時にスクロールされる問題を修正しました。</li>
+			<li>アドレスバー入力時のCPU負荷を軽減しました。</li>
+			<li><strong>NEW:</strong>単一ページモードに対応しました。</li>
+		</ul>
+		
+		<h3>辞書</h3>
+		<ul>
+			<li>一部の画像が収録されていません。wikix(スパイダー)の問題であると考えられます。</li>
+		</ul>
+		
+		<h2>ライブラリ</h2>
+		<p>
+			XTBookで使用している、あるいは関連しているライブラリの一覧です。SDL以外はソースコードが組み込まれており、SDLはダイナミックリンクされています。
+		</p>
+		<h3><a href="http://www.libsdl.org/">SDL</a></h3>
+		<p>
+			Simple DirectMedia Layer(SDL)はクロスプラットフォーム、フリーかつオープンソースのマルチメディアライブラリの、C言語で書かれたライブラリです。このライブラリは様々なプラットフォームのグラフィックス・サウンド・入力デバイスへのシンプルなインターフェイスを提供します。
+		</p>
+		<p>
+			GNU Lesser General Public Licenseでライセンスされています。
+		</p>
+		<h3><a href="http://www.voicenet.com/~richgel">Small JPEG Decoder Library v.93b</a> (jpgdlib)</h3>
+		<p>
+			このC++ライブラリはJPEG画像をデコードします。これは存在する中で最も高機能なJPEGライブラリというわけではないものの、比較的高速に作動し、完全にフリーであり、メモリをほとんど消費しません。このライブラリは全体で数千行しかないため、ソースコードは理解しやすく、更なる最適化も容易です。特に一般的なハフマンDCTに基づいたシーケンシャル・プログレッシブ画像がサポートされています。
+		</p>
+		<p>
+			Rich Geldreichにより、GNU Lesser General Public Licenseでライセンスされています。
+		</p>
+		<h3><a href="http://www.sourceforge.net/projects/tinyxml/">TinyXML</a></h3>
+		<p>
+			TinyXMLはシンプルで小さいC++で書かれたXMLパーサであり、他のプログラムに容易に統合することができます。
+		</p>
+		<p>
+			Lee Thomason、Yves Berquin、及びAndrew Ellertonにより、ZLib Licenseでライセンスされています。
+		</p>
+		
+		<h3><a href="http://tukaani.org/xz/embedded.html">XZ Embedded</a></h3>
+		<p>
+			XZ Embeddedは比較的小さい、.xzファイル形式の限定的実装です。現在、解凍のみ実装されています。
+		</p>
+		<p>
+			Lasse Collin及びIgor Pavlovによりプログラムされ、パブリックドメインです。
+		</p>
+		
+		<h3><a href="http://www.webkit.org/">WebKit</a></h3>
+		<p>
+			WebKitはウェブページをウェブブラウザでレンダリングするためにデザインされたレイアウトエンジンです。
+			これはGoogle ChromeやSafariで使用され、それらのブラウザは2011年1月の時点でブラウザマーケット市場の14%、6%を占めています。
+			またこのブラウザエンジンはAmazon Kindle ebook リーダーに含まれる実験的ブラウザにも使用されています。
+		</p>
+		<p>
+			XTBookではWebKitを直接利用しませんが、WebKitのWebCoreに基づいて作成されたコードをTWiki Rendererの一部に使用しています。
+		</p>
+		
+		<h3><a href="http://www.mediawiki.org/">MediaWiki</a></h3>
+		<p>
+			MediaWikiはウィキメディア財団により開発された、WebベースのWikiソフトウェアの一つです。これはウィキペディア、ウィクショナリー、及びウィキニュースを含む、ウィキメディア財団のプロジェクトの全てで使用されています。なお、これはPHPを使用してプログラムされています。
+		</p>
+		<p>
+			XTBookではMediaWikiを直接利用しませんが、MediaWikiのソースコードに基づいたソースコードがTWiki Parserの一部に使用されています。
+		</p>
+		
+		<h2>ライセンス</h2>
+		<p>
+			XTBookは<a href="GNU GPL.html">GPL</a>でライセンスされます。
+		</p>
+		
+		<h2>このドキュメントについて</h2>
+		<p>
+			この文章は2011年8月18日に執筆されました。使用されている画像に含まれるウィキペディアの記事は同年7月23日、アンサイクロペディアの記事は同年7月3日のものです。
+		</p>
+		<p style="text-align: right; font-size: 80%;">
+			Copyright 2011 <a href="http://www.nexhawks.net">Nexhawks</a>, all rights reserved.
+		</p>
+	</body>
+</html>
+		
+		

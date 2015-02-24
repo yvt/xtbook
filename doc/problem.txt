@@ -1,0 +1,42 @@
+
+  GLITCH WHEN CLOSING TWDIALOG
+
+problem: The screen isn't correctly updated when the user close a twDialog.
+reason: twRect::operator && was badly coded.
+solution: fix twRect::operator &&.
+
+
+  CRASH WITH XTBSEARCHBAR
+
+problem: XTBTextFieldTest crashes when the user close it.
+reason: After m_button's desturctor was called, m_searchBar's once is called.
+        And then it calls invokeDelayed for XTBTextField::selectAll(), but 
+		m_searchBar is deleted soon, and the text field too.
+		In the next event loop, twSDLEvent finally doesn't execute 
+		the invocation, but deletes it usually. The invocation is already 
+		invalidated, so its destructor shouldn't have called 
+		detatchFromInvocation of its target class.
+solution: in ~twInvocation(), call detatchFromInvocation only when 
+		  m_valid == true.
+
+
+  BLACKOUT WHEN RESIZING
+  
+problem: sometimes the screen black-outs when resizing.
+reason: unknown.
+solution: validate twice.
+
+
+  CRASH WITH -march=armv4, -mthumb, AND SO ON
+
+problem: crash when it was compiled with -march=..., -mthumb, and so on.
+		 it shows: *buffer overflow detected*
+reason: -D_FORTIFY_SOURCE=2
+solution: -D_FORTIFY_SOURCE=0
+
+
+  CANNOT GO BACK
+
+problem: cannot go either back or forward.
+reason: displayURL always returned false because of gcc's bug.
+solution: -O3 -> -Os

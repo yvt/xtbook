@@ -1,0 +1,80 @@
+
+  ABOUT TCW
+  Copyright 2011 Nexhawks
+  
+WHAT IS TCW?
+  tcw is a widget toolkit that runs usually with SDL. Originally it was made to 
+  use with GCounter, which is the program I was making for the science club I 
+  had been belonged to. 
+
+INVOCATION SYSTEM
+  tcw supports invocation system. It abstructs a function call and make it
+  simpler and safer to call a function in the background, or delayed.
+  An abstructed function call is called the invocation.
+
+APP CLASS
+  twApp is the core of tcw. It is initialized by calling twInit.
+
+BASE CLASSES
+  twEvent
+    This manages any events received. It also supports the invocation system.
+  twDC
+    This abstracts the drawing operations.
+  twWnd
+    This is much like CWnd in MFC. One of instances can be the "desktop", which
+	is the root of the others.
+  twFont
+    twFont renders text. 
+  twBaseSkin
+    twBaseSkin renders the border of twWnd, twButton, and so on. It also decides
+	colors to render them.
+  twTimer
+    Needless to say, it is a timer.
+  twException
+  twInvocation
+    This is the core of tcw's invocation system. It abstracts a function call,
+	and it must be deleted after it was used. The caller gives the ownership
+	completely and mustn't delete it.
+
+BASIC WINDOWS
+  twTopWnd
+    twTopWnd is a window that can be resized and moved by the user.
+	Note that its background is opaque.
+  twDialog
+    twDialog is a window that cannot be resized, but can be moved by the user.
+	One twWnd can be associated with it, as a "modal parent." 
+
+COMMON CONTROLS
+  twButton
+    twButton is a push button. The user can click it to tell the application 
+	something.
+  twCheckBox
+    twCheckBox is a check box. The user can switch it, and it keeps its state.
+  twRadioBtn
+    twRadioBtn is just like a check box, but only one can be selected at once.
+  twLabel
+    twLabel just displays text. No other action.
+
+COMMON DIALOG
+  twMsgBox
+    twMsgBox is much like MessageBox of Win32, except that it doesn't support
+	icons such as MB_ICONINFORMATION.
+
+SDL SPECIFIC
+  twSDLDC
+    twSDLDC converts some drawing operations to SDL's ones. It also supports
+	loading XPM, BMP, and so on.
+  twSDLEvent
+    twSDLEvent communicates with SDL's event system and manages some events.
+	Invocation system is implemented as well.
+	
+OTHER CLASSES
+  twVGAFont
+	twVGAFont is the built-in font. It supports only OEM/DOS charset.
+  twExposureFont
+    twExposureFont supports fonts of Exposure, which is the program
+	I had been making for several weeks.
+  twTimerWithInvocation
+	This is the timer that uses twInvocation. It is useful, but make sure to 
+	invalidate it before deleting the target class.
+  

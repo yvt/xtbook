@@ -1,0 +1,31 @@
+
+  XTBOOK WIKIPLEXUS FORMAT 1 DESCRIPTION
+
+Note: 32-bit addressing is used.
+Note: Big-endian is used.
+
+(uint32_t) 0xf1c0ffee
+(uint32_t) Address to Page Table
+(uint16_t) Number of Pages
+(uint16_t) Number of Index Entries
+(uint16_t[]) Addresses to Index Entries (NOTICE: 16-bit! and, origin IS next of this)
+[ (IndexEntryType[]) some indices ]
+
+(void) Pad
+
+(uint32_t[])  Page Table Entry - Addresses to Page (origin IS next of this)
+[ (PageEntryType[]) page ]
+
+
+ * IndexEntryType
+(uint8_t) Page
+(uint8_t) Level
+(string) Display Text
+
+ * PageEntryType
+(string) Wiki
+
+
+
+
+

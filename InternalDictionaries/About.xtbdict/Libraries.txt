@@ -1,0 +1,50 @@
+<h2>Libraries for XTBook</h2>
+
+<dl>
+
+<dt style="font-weight: bold;">SDL</dt>
+<dd><strong>http://www.libsdl.org/</strong></dd>
+<dd><strong>Simple DirectMedia Layer</strong> is a cross-platform, free and open source multimedia library written in C that presents a simple interface to various platforms' graphics, sound, and input devices.</dd>
+<dd>Licensed under GNU Lesser General Public License.</dd>
+
+<dt style="font-weight: bold;">Small JPEG Decoder Library v0.93b (jpgdlib)</dt>
+<dd><strong>http://www.voicenet.com/~richgel</strong></dd>
+<dd>This C++ library decodes JPEG images.  It's not the most full-featured JPEG library available, but it's relatively fast, completely free (LGPL license), uses little memory, and should be easy to understand and further optimize (mostly because it's so small:  the entire library is only a few thousand lines long).  The very common Huffman DCT-based sequential and progressive modes of operation are supported.</dd>
+<dd>Licensed under GNU Lesser General Public License, Copyright (C) 1994-2000 Rich Geldreich.</dd>
+
+<dt style="font-weight: bold;">TinyXML</dt>
+<dd><strong>http://www.sourceforge.net/projects/tinyxml/</strong></dd>
+<dd>TinyXML is a simple, small, C++ XML parser that can be easily 
+integrated into other programs.</dd>
+<dd>Licensed under ZLib license, by Lee Thomason, Yves Berquin, Andrew Ellerton.</dd>
+
+<dt style="font-weight: bold;">XZ Embedded</dt>
+<dd><strong>http://tukaani.org/xz/embedded.html</strong></dd>
+<dd>XZ Embedded is a relatively small, limited implementation of the .xz file format. Currently only decoding is implemented.</dd>
+<dd>All the files in this package have been written by Lasse Collin and/or Igor Pavlov. All these files have been put into the public domain.</dd>
+
+</dl>
+
+<h2>Related Libraries</h2>
+
+<dl>
+
+<dt style="font-weight: bold;">WebKit</dt>
+<dd><strong>http://www.webkit.org/</strong></dd>
+<dd>WebKit is a layout engine designed to allow web browsers to render web pages. WebKit powers Google Chrome and Safari, which in January 2011 had around 14% and 6% of browser market share respectively.[2] It is also used as the basis for the experimental browser included with the Amazon Kindle ebook reader. The WebKit engine provides a set of classes to display web content in windows, and implements browser features such as following links when clicked by the user, managing a back-forward list, and managing a history of pages recently visited.</dd>
+<dd>Licensed under GNU Lesser General Public License and BSD License.</dd>
+
+<dt style="font-weight: bold;">MediaWiki</dt>
+<dd><strong>http://www.mediawiki.org/</strong></dd>
+<dd>MediaWiki is a popular free web-based wiki software application. Developed by the Wikimedia Foundation, it is used to run all of its projects, including Wikipedia, Wiktionary and Wikinews. Numerous other wikis around the world also use it to power their websites. It is written in the PHP programming language and uses a backend database.</dd>
+<dd>Licensed under GNU General Public License.</dd>
+
+
+
+</dl>
+
+
+
+<p>
+As usual, this software is provided "as is", without any warranty.
+</p>

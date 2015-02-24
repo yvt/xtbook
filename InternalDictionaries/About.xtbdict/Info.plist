@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>XTBDictionaryIdentifier</key>
+	<string>com.nexhawks.XTBook.About</string>
+	<key>XTBDictionaryScheme</key>
+	<string>about</string>
+	<key>XTBDictionaryTypeIdentifier</key>
+	<string>com.nexhawks.XTBook.SampleDictionaryType</string>
+	<key>XTBDictionaryDisplayName</key>
+	<string>About XTBook</string>
+	<key>XTBSampleDictionaryDefaultPage</key>
+	<string>Index</string>
+</dict>
+</plist>
